@@ -30,6 +30,7 @@ module.exports = {
           options: { resources: [
             path.resolve(__dirname, 'src', 'styles', 'vars.scss'),
             path.resolve(__dirname, 'src', 'styles', 'mixins.scss'),
+            path.resolve(__dirname, 'src', 'styles', 'typography.scss'),
           ]},
         },
       ],
