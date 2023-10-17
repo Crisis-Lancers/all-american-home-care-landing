@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development",
+    "build": "webpack --config ./webpack.config.js --env mode=prod",
+    "start": "webpack serve --open --config ./webpack.config.js --env mode=dev",
     "prettier": "prettier -c src/",
     "lint": "eslint --ext .ts src/",
     "fix": "eslint --fix --ext .ts src/",
@@ -38,6 +37,7 @@
     "typescript": "^5.2.2",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.10.0"
   }
 }
