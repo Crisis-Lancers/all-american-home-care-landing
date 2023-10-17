@@ -1,10 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
+const { merge } = require('webpack-merge');
 
-const mode = process.env.NODE_ENV || 'development';
-
-module.exports = {
+const baseConfig = {
   entry: path.resolve(__dirname, './src/index.ts'),
   mode: 'development',
   output: {
@@ -17,7 +16,7 @@ module.exports = {
     {
       test: /\.html$/,
       loader: 'html-loader',
-      options: { minimize: false },
+      options: { minimize: true },
     },
     {
 		  test: /^((?!module).)*(\.(sc|sa|c)ss)$/i,
@@ -31,26 +30,6 @@ module.exports = {
             path.resolve(__dirname, 'src', 'styles', 'vars.scss'),
             path.resolve(__dirname, 'src', 'styles', 'mixins.scss'),
             path.resolve(__dirname, 'src', 'styles', 'typography.scss'),
-          ]},
-        },
-      ],
-    },
-    {
-		  test: /module\.(sc|sa|c)ss$/i,
-      use: [
-        {
-          loader: "css-loader",
-          options: {
-            modules: false,
-            exportType: "css-style-sheet",
-          }
-        },
-        'sass-loader',
-        {
-          loader: 'sass-resources-loader',
-          options: { resources: [
-            path.resolve(__dirname, 'src', 'styles', 'vars.scss'),
-            path.resolve(__dirname, 'src', 'styles', 'mixins.scss'),
           ]},
         },
       ],
@@ -94,10 +73,11 @@ module.exports = {
       },
     }),
   ],
-  devServer: {
-    hot: true,
-    historyApiFallback: true,
-  },
-  devtool: (mode === 'development') ? 'inline-source-map' : false,
-  mode: mode,
+};
+
+module.exports = ({ mode }) => {
+  const isProductionMode = mode === 'prod';
+  const envConfig = isProductionMode ? require('./webpack.prod.config') : require('./webpack.dev.config.js');
+
+  return merge(baseConfig, envConfig);
 };
