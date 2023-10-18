@@ -1,19 +1,19 @@
 @mixin contact-block($width, $height) {
-  @extend %typography-contact;
-
-  border-radius: 66px;
-  border: 1px solid #d4dffc;
-  background: #fff;
-  width: $width;
-  height: $height;
-  color: $primary;
+    @extend %typography-contact;
+  
+    border-radius: 66px;
+    border: 1px solid #d4dffc;
+    background: #fff;
+    width: $width;
+    height: $height;
+    color: $primary;
 }
 
 @mixin contact-block-icon() {
-  display: flex;
-  padding: 12px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 59px;
-  background: #d4dffc;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 59px;
+    background: #d4dffc;
 }
