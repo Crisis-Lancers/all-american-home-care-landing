@@ -1,0 +1,36 @@
+---
+import FormButton from "./FormButton.astro";
+---
+
+<section class="get-touch">
+    <div class="get-touch__suggestion">
+        <h2 class="get-touch__suggestion-title">
+            Lets get<br>in touch!
+        </h2>
+        <p class="get-touch__suggestion-desc">
+            We're always happy to answer your questions.
+        </p>
+    </div>
+    <form action="#" method="post" class="get-touch__form">
+        <h4 class="get-touch__form-title">I am a</h4>
+        <div class="get-touch__role">
+            <FormButton title="Client" alt="client" icon="/customer.png"/>
+            <FormButton title="Caregiver" alt="caregiver" icon="/health-care.png"/>
+        </div>
+        <div class="get-touch__fullname">
+            <input type="text" class="get-touch__first-name" placeholder="First name*">
+            <input type="text" class="get-touch__last-name" placeholder="Last name*">
+        </div>
+        <div class="get-touch__contact">
+            <input type="text" class="get-touch__phone">
+            <input type="text" class="get-touch__zip">
+        </div>
+        <div class="select is-primary">
+            <select>
+              <option value="" selected>I already have services</option>
+              <option value=""></option>
+            </select>
+        </div>
+        <input type="submit" value="" class="button button_info">
+    </form>
+</section>
