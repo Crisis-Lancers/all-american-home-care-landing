@@ -1,0 +1,19 @@
+---
+type Props = {
+    title: string,
+    icon: string,
+    alt: string,
+}
+
+const { title, icon, alt } = Astro.props;
+---
+
+<div class="custom-button">
+    <div class="custom-button__content">
+        { title }
+    </div>
+
+    <div class="custom-button__icon-wrapper">
+        <img src={icon} alt={alt} class="custom-button__icon">
+    </div>
+</div>
