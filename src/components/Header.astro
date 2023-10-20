@@ -1,6 +1,7 @@
 ---
 import "../styles/header.scss";
-import "../styles/button.scss";
+
+import ContactButton from "./ContactButton.astro";
 ---
 
 <header>
@@ -32,12 +33,7 @@ import "../styles/button.scss";
       </ul>
     </nav>
     <div class="header__button column is-flex is-flex-direction-row-reverse">
-      <div class="button button_contact">
-        <div class="button__icon-wrapper">
-          <img src="/call.png" alt="" class="button__icon" />
-        </div>
-        <div class="button__ref">215-5317882</div>
-      </div>
+      <ContactButton info="215-5317882" icon="/call.png" alt="Call Icon" />
     </div>
   </div>
 </header>
