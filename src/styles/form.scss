@@ -62,26 +62,17 @@
         display: flex;
         background-color: inherit;
         margin: 0px 0px 40px 0px;
-
-        border-width: 0px;
-        border-radius: 0px;
-        border-bottom: 1px solid #FFF;
-
-        &::placeholder{
-            color: whitesmoke;
-        }
     }
 
     &__select{
         width: 100%;
         background-color: $primary !important;
         border-width: 0px;
-        border-radius: 0px;
+        border-radius: 0px !important;
         border-bottom: 1px solid #FFF !important;
+        color: white !important;
 
-        &::placeholder{
-            color: whitesmoke;
-        }
+        @extend %typography-p3;
     }
 
     &__submit{
