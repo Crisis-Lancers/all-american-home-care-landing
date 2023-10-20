@@ -1,11 +1,24 @@
 @import "mixins";
+@import "vars";
+@import "typography";
 
 .button {
-    &__icon-wrapper {
-        @include contact-block-icon();
-    }
+  
+  &__icon-wrapper {
+    @include contact-block-icon();
+  }
 
-    &_contact {
-        @include contact-block(218px, 66px);
-    }
+  &_contact-phone {
+    @include contact-block(218px, 66px);
+  }
+
+  &_apply {
+    @extend %typography-apply;
+
+    box-sizing: border-box;
+    border-radius: 12px;
+    width: 242px;
+    height: 68px;
+    
+  }
 }
