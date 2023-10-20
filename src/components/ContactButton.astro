@@ -5,12 +5,13 @@ type Props = {
     info: string;
     icon: string;
     alt: string;
+    modifier: string;
 };
 
-const { info, icon, alt } = Astro.props;
+const { info, icon, alt, modifier } = Astro.props;
 ---
 
-<div class="button button_contact">
+<div class=`button button_contact_${modifier}`>
   <div class="button__icon-wrapper">
     <img src={icon} alt={alt} class="button__icon" />
   </div>

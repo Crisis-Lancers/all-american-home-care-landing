@@ -8,8 +8,10 @@
     @include contact-block-icon();
   }
 
-  &_contact-phone {
-    @include contact-block(218px, 66px);
+  &_contact {
+    &_phone {
+      @include contact-block(218px, 66px);
+    }
   }
 
   &_apply {
@@ -19,6 +21,5 @@
     border-radius: 12px;
     width: 242px;
     height: 68px;
-    
   }
 }
