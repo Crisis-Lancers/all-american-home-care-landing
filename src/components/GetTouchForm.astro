@@ -1,5 +1,7 @@
 ---
 import FormButton from "./FormButton.astro";
+import '../styles/vars.scss';
+import '../styles/form.scss';
 ---
 
 <section class="get-touch">
@@ -8,7 +10,7 @@ import FormButton from "./FormButton.astro";
             Lets get<br>in touch!
         </h2>
         <p class="get-touch__suggestion-desc">
-            We're always happy to answer your questions.
+            We're always happy to answer<br>your questions.
         </p>
     </div>
     <form action="#" method="post" class="get-touch__form">
@@ -18,12 +20,12 @@ import FormButton from "./FormButton.astro";
             <FormButton title="Caregiver" alt="caregiver" icon="/images/health-care.png"/>
         </div>
         <div class="get-touch__fullname">
-            <input type="text" class="get-touch__first-name" placeholder="First name*">
-            <input type="text" class="get-touch__last-name" placeholder="Last name*">
+            <input type="text" class="form-input" placeholder="First name*" id="first-name">
+            <input type="text" class="form-input" placeholder="Last name*" id="last-name">
         </div>
         <div class="get-touch__contact">
-            <input type="text" class="get-touch__phone">
-            <input type="text" class="get-touch__zip">
+            <input type="text" class="form-input" placeholder="Phone number*" id="phone">
+            <input type="text" class="form-input" placeholder="Zip Code*" id="zip">
         </div>
         <div class="select is-primary">
             <select>
@@ -31,6 +33,6 @@ import FormButton from "./FormButton.astro";
               <option value=""></option>
             </select>
         </div>
-        <input type="submit" value="" class="button button_info">
+        <input type="submit" value="Submit" class="button button_info">
     </form>
 </section>

@@ -1,0 +1,55 @@
+@import "vars";
+@import "typography";
+
+.get-touch{
+    display: flex;
+    justify-content: center;
+
+    &__suggestion{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px 0px 0px;
+    }
+
+    &__suggestion-title{
+        margin: 0 0 39px 0;
+        @extend %typography-h2;
+        font-weight: 700;
+        text-align: left;
+        color: $primary;
+    }
+
+    &__suggestion-desc{
+        margin: 0 0 0 0;
+        @extend %typography-h3;
+        color: $primary;
+    }
+
+    &__form{
+        display: flex;
+        padding: 40px;
+        flex-direction: column;
+        background-color: $primary;
+        border-radius: 12px;
+    }
+
+    &__form-title{
+        @extend %typography-h3;
+        color: #FFF;
+        font-weight: 800;
+        line-height: 120%; /* 48px */
+    }
+
+    &__role{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.form-input{
+    border-bottom: 1px solid #FFF;
+
+    &::placeholder{
+        color: #FFF;
+    }
+}

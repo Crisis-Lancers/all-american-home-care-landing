@@ -8,12 +8,24 @@ type Props = {
 const { title, icon, alt } = Astro.props;
 ---
 
-<div class="custom-button">
-    <div class="custom-button__content">
+<div class="form-button">
+    <div class="form-button__content">
         { title }
     </div>
 
-    <div class="custom-button__icon-wrapper">
-        <img src={icon} alt={alt} class="custom-button__icon">
+    <div class="form-button__icon-wrapper">
+        <img src={icon} alt={alt} class="form-button__icon">
     </div>
 </div>
+
+<style>
+    .form-button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .form-button__content{
+        margin: 0px 16px 0px 0px;
+    }
+</style>
