@@ -3,12 +3,14 @@ type Props = {
     title: string,
     icon: string,
     alt: string,
+    role: 'client' | 'caregiver',
 }
 
-const { title, icon, alt } = Astro.props;
+const { title, icon, alt, role } = Astro.props;
+const className = `form-button form-button_${role}`;
 ---
 
-<div class="form-button">
+<div class={className}>
     <div class="form-button__content">
         { title }
     </div>
@@ -18,11 +20,33 @@ const { title, icon, alt } = Astro.props;
     </div>
 </div>
 
-<style>
+<style lang="scss">
+    @import '../styles/vars.scss';
+
     .form-button{
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin: 0px 24px 0px 0px;
+        border-radius: 8px;
+        width: 50%;
+        justify-content: center;
+        padding: 18px 8px;
+
+        &:last-child{
+            margin: 0px 0px 0px 0px;
+        }
+    }
+
+    .form-button_client{
+        background-color: white;
+        color: $primary;
+    }
+
+    .form-button_caregiver{
+        border: 1px solid white;
+        background-color: $primary;
+        color: white;
     }
 
     .form-button__content{

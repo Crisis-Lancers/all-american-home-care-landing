@@ -38,18 +38,56 @@
         color: #FFF;
         font-weight: 800;
         line-height: 120%; /* 48px */
+        margin: 0px 0px 24px 0px;
+        align-self: center;
     }
 
     &__role{
         display: flex;
         flex-direction: row;
+        margin: 0px 0px 24px 0px;
+    }
+
+    &__fullname,
+    &__contact{
+        display: flex;
+        margin: 0px 0px 24px 0px;
+    }
+
+    // Todo
+    &__select{
+        display: flex;
+        background-color: inherit;
+        border-width: 0px;
+        border-radius: 0px;
+        border-bottom: 1px solid #FFF;
+
+        &::placeholder{
+            color: whitesmoke;
+        }
+    }
+
+    &__submit{
+        padding: 22px 40px;
+        color: $primary;
+        background-color: $accent;
     }
 }
 
 .form-input{
+    display: flex;
+    background-color: inherit;
+    border-width: 0px;
+    border-radius: 0px;
     border-bottom: 1px solid #FFF;
+    width: 50%;
+
+    margin: 0px 24px 0px 0px;
+    &:last-child{
+        margin: 0px 0px 0px 0px;
+    }
 
     &::placeholder{
-        color: #FFF;
+        color: whitesmoke;
     }
 }

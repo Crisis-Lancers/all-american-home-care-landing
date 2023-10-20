@@ -16,23 +16,23 @@ import '../styles/form.scss';
     <form action="#" method="post" class="get-touch__form">
         <h4 class="get-touch__form-title">I am a</h4>
         <div class="get-touch__role">
-            <FormButton title="Client" alt="client" icon="/images/customer.png"/>
-            <FormButton title="Caregiver" alt="caregiver" icon="/images/health-care.png"/>
+            <FormButton title="Client" alt="client" icon="/images/customer.png" role="client"/>
+            <FormButton title="Caregiver" alt="caregiver" icon="/images/health-care.png" role="caregiver"/>
         </div>
         <div class="get-touch__fullname">
-            <input type="text" class="form-input" placeholder="First name*" id="first-name">
-            <input type="text" class="form-input" placeholder="Last name*" id="last-name">
+            <input type="text" class="form-input input" placeholder="First name*" id="first-name">
+            <input type="text" class="form-input input" placeholder="Last name*" id="last-name">
         </div>
         <div class="get-touch__contact">
-            <input type="text" class="form-input" placeholder="Phone number*" id="phone">
-            <input type="text" class="form-input" placeholder="Zip Code*" id="zip">
+            <input type="text" class="form-input input" placeholder="Phone number*" id="phone">
+            <input type="text" class="form-input input" placeholder="Zip Code*" id="zip">
         </div>
-        <div class="select is-primary">
+        <div class="get-touch__select select is-primary">
             <select>
               <option value="" selected>I already have services</option>
               <option value=""></option>
             </select>
         </div>
-        <input type="submit" value="Submit" class="button button_info">
+        <input type="submit" value="Submit" class="get-touch__submit button button_info">
     </form>
 </section>
