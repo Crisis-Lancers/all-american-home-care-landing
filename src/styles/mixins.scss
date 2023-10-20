@@ -1,9 +1,14 @@
+@import "vars.scss";
+@import "typography.scss";
+
 @mixin contact-block($width, $height) {
     @extend %typography-contact;
   
+    box-sizing: border-box;
     border-radius: 66px;
     border: 1px solid #d4dffc;
     background: #fff;
+    padding: 8px 24px 8px 8px;
     width: $width;
     height: $height;
     color: $primary;
@@ -12,6 +17,7 @@
 @mixin contact-block-icon() {
     display: flex;
     padding: 12px;
+    margin: 0 24px 0 0;
     justify-content: center;
     align-items: center;
     border-radius: 59px;
