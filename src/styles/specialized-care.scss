@@ -1,0 +1,21 @@
+@import "vars";
+@import "typography";
+
+.specialty-care{
+    display: flex;
+    flex-direction: column;
+
+    .title_h2{
+        @extend %typography-h3;
+        color: $primary;
+        align-self: center;
+        margin-bottom: 0px 0px 24px 0px;
+    }
+
+    &__text{
+        @extend %typography-p3;
+        color: $primary;
+        align-self: center;
+        margin: 0px 0px 48px 0px;
+    }
+}
