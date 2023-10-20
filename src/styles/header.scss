@@ -1,6 +1,11 @@
 .header {
-    &__banner {
+
+    &__image {
         width: 220px;
         height: 88px;
+    }
+
+    &__item {
+        padding: 7px 25px;
     }
 }
