@@ -1,5 +1,5 @@
-@import "vars.scss";
-@import "typography.scss";
+@import "vars";
+@import "typography";
 
 @mixin contact-block($width, $height) {
     @extend %typography-contact;
