@@ -14,12 +14,12 @@
     color: $primary;
 }
 
-@mixin contact-block-icon() {
+@mixin block-icon($padding, $margin, $border-radius, $background) {
     display: flex;
-    padding: 12px;
-    margin: 0 24px 0 0;
+    padding: $padding;
+    margin: $margin;
     justify-content: center;
     align-items: center;
-    border-radius: 59px;
-    background: $accent;
+    border-radius: $border-radius;
+    background: $background;
 }
