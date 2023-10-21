@@ -1,0 +1,45 @@
+@import "vars";
+@import "typography";
+
+.medicare{
+    display: flex;
+
+    &__item{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px 0px 0px;
+        border-radius: 12px;
+        background-color: $secondary;
+
+        padding: 56px 35px;
+        color: white;
+    }
+
+    &__title-h3,
+    &__title-h2{
+        margin: 0px 0px 24px 0px;
+    }
+
+    &__title-h3{
+        @extend %typography-h3;
+    }
+
+    &__title-h2{
+        @extend %typography-h2;
+    }
+
+    &__text{
+        @extend %typography-p1;
+        font-weight: 400;
+    }
+
+    &__image-wrapper{
+        flex: 1;
+        background-image: url('/images/medicare.jpeg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+    }
+}
