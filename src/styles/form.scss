@@ -1,0 +1,118 @@
+@import "vars";
+@import "typography";
+
+.get-touch{
+    display: flex;
+    // justify-content: center;
+
+    &__suggestion{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        margin: 0px 20px 0px 0px;
+    }
+
+    &__suggestion-title{
+        margin: 0 0 39px 0;
+        @extend %typography-h2;
+        font-weight: 700;
+        text-align: left;
+        color: $primary;
+    }
+
+    &__suggestion-desc{
+        margin: 0 0 0 0;
+        @extend %typography-h3;
+        color: $primary;
+    }
+
+    &__form{
+        display: flex;
+        flex: 1;
+        padding: 40px;
+        flex-direction: column;
+        background-color: $primary;
+        border-radius: 12px;
+    }
+
+    &__form-title{
+        @extend %typography-h3;
+        color: #FFF;
+        font-weight: 800;
+        line-height: 120%; /* 48px */
+        margin: 0px 0px 24px 0px;
+        align-self: center;
+    }
+
+    &__role{
+        @extend %typography-p1;
+        font-weight: 700;
+        display: flex;
+        flex-direction: row;
+        margin: 0px 0px 24px 0px;
+        cursor: pointer;
+    }
+
+    &__fullname,
+    &__contact{
+        display: flex;
+        margin: 0px 0px 24px 0px;
+    }
+
+    // Todo
+    &__select-wrapper{
+        display: flex;
+        background-color: inherit;
+        margin: 0px 0px 40px 0px;
+
+        &::after{
+            border-color: white !important;
+            border-width: 2.5px !important;
+            border-radius: 0px !important;
+        }
+    }
+
+    &__select{
+        width: 100%;
+        background-color: $primary !important;
+        border-width: 0px;
+        border-radius: 0px !important;
+        border-bottom: 1px solid #FFF !important;
+        color: white !important;
+
+        @extend %typography-p3;
+    }
+
+    &__submit{
+        padding: 22px 40px;
+        color: $primary;
+        background-color: $accent;
+        border-radius: 12px;
+        border-width: 0px;
+        width: 35.165%;
+        align-self: center;
+        @extend %typography-p1;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+.form-input{
+    display: flex;
+    background-color: inherit;
+    border-width: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #FFF;
+    flex: 1;
+
+    margin: 0px 24px 0px 0px;
+    &:last-child{
+        margin: 0px 0px 0px 0px;
+    }
+
+    &::placeholder{
+        color: whitesmoke;
+        opacity: 50%;
+        @extend %typography-p3;
+    }
+}
