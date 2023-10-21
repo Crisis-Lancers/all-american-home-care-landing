@@ -4,13 +4,14 @@
 .specialty-care{
     display: flex;
     flex-direction: column;
+    // align-items: center;
 
     // Naming issue
     .title_h2{
         @extend %typography-h3;
         color: $primary;
         align-self: center;
-        margin-bottom: 0px 0px 24px 0px;
+        margin: 0px 0px 24px 0px;
     }
 
     .title_h3{
@@ -28,9 +29,45 @@
         margin: 0px 0px 48px 0px;
     }
 
-    .tile.is-child{
+    .specialty-care__items{
+        display: grid;
+        column-gap: 20px;
+        row-gap: 14px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 131px);
+        grid-template-areas: 
+        "hours term term care care"
+        "companion companion nursing care care";
+    }
+
+    .specialty-care__item{
         background-color: $accent;
         border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &_hours{
+            grid-area: hours;
+        }
+
+        &_term{
+            grid-area: term;
+        }
+
+        &_companion{
+            grid-area: companion;
+        }
+
+        &_nursing{
+            grid-area: nursing;
+        }
+
+        &_care{
+            grid-area: care;
+        }
     }
 
     .specialty-care__item-text{
