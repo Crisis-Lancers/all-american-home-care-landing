@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
 
+    // Naming issue
     .title_h2{
         @extend %typography-h3;
         color: $primary;
@@ -12,10 +13,29 @@
         margin-bottom: 0px 0px 24px 0px;
     }
 
+    .title_h3{
+        @extend %typography-h3;
+        font-weight: 700;
+        line-height: 100%; /* 40px */
+        color: $primary;
+        margin: 0px 0px 13px 0px;
+    }
+
     &__text{
         @extend %typography-p3;
         color: $primary;
         align-self: center;
         margin: 0px 0px 48px 0px;
+    }
+
+    .tile.is-child{
+        background-color: $accent;
+        border-radius: 10px;
+    }
+
+    .specialty-care__item-text{
+        @extend %typography-p1;
+        font-weight: 600;
+        color: $primary;
     }
 }
