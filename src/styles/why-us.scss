@@ -1,0 +1,13 @@
+.why-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    &__reason {
+        width: 100%;
+        height: 100%;
+    }
+}
+  
