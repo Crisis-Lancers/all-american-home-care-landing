@@ -1,0 +1,23 @@
+@import "mixins";
+@import "vars";
+@import "typography";
+
+.get-in-touch{
+    display: flex;
+    flex-direction: column;
+    @include bg-gradient-img($grayGradient, url('/images/touch.jpeg'));
+    padding: 99px 0px;
+    border-radius: 16px;
+    color: white;
+
+    &__title{
+        @extend %typography-h2;
+        align-self: center;
+        margin: 0px 0px 24px 0px;
+    }
+
+    &__text{
+        @extend %typography-p1;
+        align-self: center;
+    }
+}
