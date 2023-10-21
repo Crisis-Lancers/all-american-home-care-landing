@@ -36,20 +36,25 @@ const className = `form-button form-button_${role}`;
         &:last-child{
             margin: 0px 0px 0px 0px;
         }
-    }
 
-    .form-button_client{
-        background-color: white;
-        color: $primary;
-    }
+        &__icon-wrapper{
+            width: 28px;
+            height: 28px;
+        }
 
-    .form-button_caregiver{
-        border: 1px solid white;
-        background-color: $primary;
-        color: white;
-    }
+        &_client{
+            background-color: white;
+            color: $primary;
+        }
 
-    .form-button__content{
-        margin: 0px 16px 0px 0px;
+        &_caregiver{
+            border: 1px solid white;
+            background-color: $primary;
+            color: white;
+        }
+
+        &__content{
+            margin: 0px 16px 0px 0px;
+        }
     }
 </style>
