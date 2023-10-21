@@ -1,0 +1,41 @@
+@import "vars";
+
+.services-range {
+    &__row {
+        display: flex;
+
+        &_1 {
+            justify-content: space-around;
+            margin: 0 0 70px;
+        }
+
+        &_2 {
+            justify-content: space-between;
+            margin: 0 0 30px;
+        }
+
+        &_3 {
+            justify-content: space-evenly;
+            margin: 0 0 30px;
+        }
+
+        &_4 {
+            justify-content: space-around;
+            margin: 0 0 70px;
+        }
+
+        &_5 {
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        &_8 {
+            margin: 0 0 0 250px;
+        }
+
+        &_9 {
+            margin: 0 200px 0 0;
+        }
+    }
+}
