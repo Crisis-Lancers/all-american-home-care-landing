@@ -38,7 +38,9 @@
     color: white;
   }
 
-  .title {
+  &__title {
+    @extend %typography-h2;
+
     margin: 0 0 40px 0;
   }
 }
