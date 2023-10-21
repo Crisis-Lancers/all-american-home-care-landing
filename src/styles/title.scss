@@ -1,0 +1,7 @@
+@import "typography";
+
+.title {
+    &_h2 {
+        @extend %typography-h2;
+    }
+}

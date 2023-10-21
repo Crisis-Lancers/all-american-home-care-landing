@@ -1,13 +1,30 @@
+@import "typography";
+
 .why-us {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 16px;
 
+    &__text {
+        &_goal {
+            @extend %typography-p3;
 
+            width: 45%;
+        }
+
+        &_reason {
+            @extend %typography-p1;
+
+            font-weight: 600;
+            text-align: left;
+        }
+    }
 
     &__reason {
         width: 100%;
         height: 100%;
+        border-radius: 12px;
     }
 }
   
