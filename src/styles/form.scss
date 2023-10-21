@@ -3,10 +3,11 @@
 
 .get-touch{
     display: flex;
-    justify-content: center;
+    // justify-content: center;
 
     &__suggestion{
         display: flex;
+        flex: 1;
         flex-direction: column;
         margin: 0px 20px 0px 0px;
     }
@@ -27,6 +28,7 @@
 
     &__form{
         display: flex;
+        flex: 1;
         padding: 40px;
         flex-direction: column;
         background-color: $primary;
@@ -101,7 +103,7 @@
     border-width: 0px;
     border-radius: 0px;
     border-bottom: 1px solid #FFF;
-    width: 50%;
+    flex: 1;
 
     margin: 0px 24px 0px 0px;
     &:last-child{
