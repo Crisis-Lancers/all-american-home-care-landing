@@ -47,3 +47,40 @@
     font-size: 56px;
   }
 }
+
+.home-care-services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $secondaryGradient;
+  border-radius: 12px;
+  padding: 0px;
+  max-height: 250px;
+  color: $text-invert;
+
+  &__title {
+    @extend %typography-h2;
+
+    text-align: left;
+    max-width: 278px;
+    margin: 38px 0 39px 40px;
+  }
+
+  &__description {
+    @extend %typography-p1;
+
+    text-align: center;
+    max-width: 592px;
+  }
+
+  &__image-wrapper {
+    max-height: 250px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &__image {
+    border-radius: 0px 12px 12px 0;
+  }
+}
