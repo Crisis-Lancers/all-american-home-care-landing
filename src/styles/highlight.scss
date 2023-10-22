@@ -2,24 +2,43 @@
 @import "typography";
 
 .highlight {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 80px 0;
+
+    &_1 {
+      flex-direction: row;
+    }
+
+    &_2 {
+      flex-direction: row-reverse;
+    }
+
+    &_3 {
+      flex-direction: row;
+    }
+  }
+
   &__title {
     @extend %typography-h4;
 
     color: $unobtrusive;
 
     &_1 {
-        max-width: 127px;
-        text-align: left;
+      max-width: 127px;
+      text-align: left;
     }
 
     &_2 {
-        max-width: 173px;
-        text-align: right;
+      max-width: 173px;
+      text-align: right;
     }
 
     &_3 {
-        max-width: 125px;
-        text-align: left;
+      max-width: 125px;
+      text-align: left;
     }
   }
 }
