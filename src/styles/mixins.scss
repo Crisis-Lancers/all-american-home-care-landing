@@ -23,3 +23,17 @@
     border-radius: $border-radius;
     background: $background;
 }
+
+@mixin bg-image($url){
+    background-image: $url;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin bg-gradient-img($gradient, $url){
+    background: $gradient, $url;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
