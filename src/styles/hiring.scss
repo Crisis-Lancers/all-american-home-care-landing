@@ -1,0 +1,64 @@
+@import "typography";
+
+.hiring-multiple {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto auto auto auto;
+  gap: 20px;
+
+  grid-template-areas:
+    "title-h2 image"
+    "text image"
+    "info-bars image"
+    "empty-space title-h3";
+
+  &__item {
+    &_1 {
+      grid-area: title-h2;
+    }
+
+    &_2 {
+      grid-area: text;
+    }
+
+    &_3 {
+      grid-area: info-bars;
+    }
+
+    &_4 {
+      grid-area: image;
+    }
+
+    &_5 {
+      grid-area: title-h3;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+
+    .info-bar {
+        margin: 16px 16px 0 0;
+    }
+  }
+
+  &__title-h2 {
+    @extend %typography-h2;
+  }
+
+  &__title-h3 {
+    @extend %typography-h3;
+  }
+
+  &__text {
+    @extend %typography-p1;
+
+    max-width: 532px;
+  }
+
+  &__image {
+    border-radius: 12px;
+  }
+}
