@@ -1,3 +1,5 @@
+@import "typography";
+
 .palliative-n-hospice {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -39,5 +41,23 @@
         grid-row: 4;
         grid-column: 2;
     }
+  }
+
+  &__title-h2 {
+    @extend %typography-h2;
+  }
+
+  &__title-h3 {
+    @extend %typography-h3;
+  }
+
+  &__text {
+    @extend %typography-p1;
+
+    max-width: 806px;
+  }
+
+  &__image {
+    border-radius: 12px;
   }
 }
