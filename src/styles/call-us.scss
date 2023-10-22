@@ -1,3 +1,5 @@
+@import "vars";
+
 .call-us {
   display: flex;
   flex-direction: column;
@@ -6,6 +8,20 @@
   &__image {
     margin: 0 0 30px 0;
     width: 100%;
+  }
+
+  &__apply {
+    &_1 {
+      background: $primaryGradient;
+    }
+
+    &_2 {
+      background: $secondaryGradient;
+    }
+
+    &_3 {
+      background: $accentGradient;
+    }
   }
 
   .column {

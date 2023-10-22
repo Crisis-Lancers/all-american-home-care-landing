@@ -5,7 +5,7 @@
 .button {
   
   &__icon-wrapper {
-    @include contact-block-icon();
+    @include block-icon(12px, 0 24px 0 0, 59px, $accent);
   }
 
   &_contact {
