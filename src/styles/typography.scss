@@ -136,6 +136,10 @@
     line-height: 120%; /* 48px */
 }
 
+%typography-h4 {
+    @extend %typography-apply;
+}
+
 %typography-p1 {
     font-family: Lato;
     font-size: 20px;
