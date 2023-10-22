@@ -1,0 +1,19 @@
+@import "typography";
+
+.surrounding-areas {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+
+  &__item {
+    &_1 {
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    &_2 {
+      grid-row: 1;
+      grid-column: 2;
+    }
+  }
+}
