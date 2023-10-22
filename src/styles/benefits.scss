@@ -76,4 +76,20 @@
       grid-row: 2;
     }
   }
+
+  &__title-h2 {
+    @extend %typography-h2;
+
+    &_right {
+        text-align: right;
+    }
+  }
+
+  &__title-h4 {
+    @extend %typography-h3;
+  }
+
+  &__text {
+    @extend %typography-p1
+  }
 }
