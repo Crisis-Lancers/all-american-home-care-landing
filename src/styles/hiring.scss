@@ -1,3 +1,5 @@
+@import "typography";
+
 .hiring-multiple {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -30,5 +32,19 @@
     &_5 {
       grid-area: title-h3;
     }
+  }
+
+  &__title-h2 {
+    @extend %typography-h2;
+  }
+
+  &__title-h3 {
+    @extend %typography-h3;
+  }
+
+  &__text {
+    @extend %typography-p1;
+
+    max-width: 532px;
   }
 }
