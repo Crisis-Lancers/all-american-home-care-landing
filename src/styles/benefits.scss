@@ -1,0 +1,19 @@
+@import "vars";
+@import "typography";
+
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+
+    &__item {
+        height: 256px;
+        background-color: $accent;
+        border-radius: 12px;
+
+        &_header {
+            background-color: transparent;
+        }
+    }
+}
