@@ -23,6 +23,10 @@
         margin: 0px 0px 13px 0px;
     }
 
+    // .title_h3-care{
+    //     margin: 0px 0px 27px 0px;
+    // }
+
     &__text{
         @extend %typography-p3;
         color: $primary;
@@ -69,6 +73,9 @@
 
         &_care{
             grid-area: care;
+            .title_h3 {
+                margin: 0px 0px 27px 0px;
+            }
         }
     }
 
