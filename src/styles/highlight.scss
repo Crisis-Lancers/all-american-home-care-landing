@@ -1,3 +1,25 @@
+@import "vars";
+@import "typography";
+
 .highlight {
-    
+  &__title {
+    @extend %typography-h4;
+
+    color: $unobtrusive;
+
+    &_1 {
+        max-width: 127px;
+        text-align: left;
+    }
+
+    &_2 {
+        max-width: 173px;
+        text-align: right;
+    }
+
+    &_3 {
+        max-width: 125px;
+        text-align: left;
+    }
+  }
 }
