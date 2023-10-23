@@ -1,0 +1,34 @@
+@import "typography";
+
+.surrounding-areas {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+  gap: 20px;
+
+  &__item {
+    &_1 {
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    &_2 {
+      grid-row: 1;
+      grid-column: 2;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+
+    .info-bar {
+        margin: 16px 0 0 16px;
+    }
+  }
+
+  &__title {
+    @extend %typography-h3;
+  }
+}

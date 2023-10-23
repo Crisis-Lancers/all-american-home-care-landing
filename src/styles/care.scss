@@ -1,0 +1,63 @@
+@import "typography";
+
+.palliative-n-hospice {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto auto auto auto;
+  gap: 20px;
+
+  &__item {
+    &_1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    &_2 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    &_3 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    &_4 {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    &_5 {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    &_6 {
+        grid-row: 3;
+        grid-column: 2;
+    }
+    
+    &_7 {
+        grid-row: 4;
+        grid-column: 2;
+    }
+  }
+
+  &__title-h2 {
+    @extend %typography-h2;
+  }
+
+  &__title-h3 {
+    @extend %typography-h3;
+  }
+
+  &__text {
+    @extend %typography-p1;
+
+    max-width: 806px;
+  }
+
+  &__image {
+    border-radius: 12px;
+  }
+}
