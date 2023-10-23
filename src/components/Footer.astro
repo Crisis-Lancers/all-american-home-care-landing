@@ -1,5 +1,7 @@
 ---
-import '../styles/footer.scss';
+import "../styles/footer.scss";
+
+import ContactButton from "./ContactButton.astro";
 ---
 
 <footer>
@@ -13,16 +15,7 @@ import '../styles/footer.scss';
           <li class="footer__item">Hiring</li>
           <li class="footer__item">Contacts</li>
         </ul>
-        <div class="button_contact footer__phone">
-          <div class="button__icon">
-            <img src="/images/call.png" alt="call" />
-          </div>
-          <div class="button__ref">
-            <a href="tel:215-5317882">
-              215-5317882
-            </a>
-          </div>
-        </div>
+        <ContactButton info="215-5317882" icon="/images/call.png" alt="call" />
       </div>
 
       <div class="footer__col_center">
@@ -58,16 +51,11 @@ import '../styles/footer.scss';
             </div>
           </li>
         </ul>
-        <div class="button_contact footer__mail">
-          <div class="button__icon">
-            <img src="/images/mail.png" alt="mail" />
-          </div>
-          <div class="button__ref">
-            <a href="mailto:mspivak@myallamericancare.com">
-              mspivak@myallamericancare.com
-            </a>
-          </div>
-        </div>
+        <ContactButton
+          info="mspivak@myallamericancare.com"
+          icon="/images/mail.png"
+          alt="mail"
+        />
       </div>
     </div>
     <p class="footer__text">
