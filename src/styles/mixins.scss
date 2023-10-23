@@ -24,6 +24,17 @@
     background: $background;
 }
 
+@mixin contact-block-new() {
+    @extend %typography-contact;
+
+    box-sizing: border-box;
+    border-radius: 66px;
+    border: 1px solid #d4dffc;
+    background: #fff;
+    padding: 8px 24px 8px 8px;
+    color: $primary;
+}
+ 
 @mixin bg-image($url){
     background-image: $url;
     background-size: cover;
