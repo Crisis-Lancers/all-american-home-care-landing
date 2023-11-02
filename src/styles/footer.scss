@@ -15,37 +15,8 @@
         font-weight: 400;
     }
 
-    .button_contact{
-        display: flex;
-        align-items: center;
-        max-width: fit-content;
-    }
-
     .footer__list{
         margin: 0px 0px 48px 0px;
-    }
-
-    .footer__phone{
-        @include contact-block-new();
-    }
-
-    .footer__mail{
-        @include contact-block-new();
-    }
-
-    .button__icon{
-        width: 50px;
-        height: 50px;
-        padding: 12px;
-        border-radius: 59px;
-        background-color: $accent;
-        margin: 0px 24px 0px 0px;
-    }
-
-    .button__ref{
-        @extend %typography-p2;
-        font-weight: 600;
-        line-height: 120%;
     }
 
     .footer__col_center,

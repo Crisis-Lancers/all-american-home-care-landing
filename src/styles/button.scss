@@ -3,15 +3,16 @@
 @import "typography";
 
 .button {
-  
   &__icon-wrapper {
-    @include block-icon(12px, 0 24px 0 0, 59px, $accent);
+    @include contact-icon();
+  }
+
+  &__ref {
+    @extend %typography-contact;
   }
 
   &_contact {
-    &_phone {
-      @include contact-block(218px, 66px);
-    }
+    @include contact-block();
   }
 
   &_apply {

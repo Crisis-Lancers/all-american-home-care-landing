@@ -5,15 +5,15 @@ type Props = {
     info: string;
     icon: string;
     alt: string;
-    modifier: string;
+    ref: string
 };
 
-const { info, icon, alt, modifier } = Astro.props;
+const { info, icon, alt, ref } = Astro.props;
 ---
 
-<div class=`button button_contact_${modifier}`>
-  <div class="button__icon-wrapper">
-    <img src={icon} alt={alt} class="button__icon" />
-  </div>
-  <div class="button__ref">{info}</div>
-</div>
+<a href={ref} class="button_contact">
+    <div class="button__icon-wrapper">
+      <img src={icon} alt={alt} class="button__icon" />
+    </div>
+    <div class="button__ref">{info}</div>
+</a>

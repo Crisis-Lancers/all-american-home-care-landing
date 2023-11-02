@@ -1,19 +1,6 @@
 @import "vars";
 @import "typography";
 
-@mixin contact-block($width, $height) {
-    @extend %typography-contact;
-  
-    box-sizing: border-box;
-    border-radius: 66px;
-    border: 1px solid #d4dffc;
-    background: #fff;
-    padding: 8px 24px 8px 8px;
-    width: $width;
-    height: $height;
-    color: $primary;
-}
-
 @mixin block-icon($padding, $margin, $border-radius, $background) {
     display: flex;
     padding: $padding;
@@ -24,15 +11,25 @@
     background: $background;
 }
 
-@mixin contact-block-new() {
-    @extend %typography-contact;
-
+@mixin contact-block() {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
     box-sizing: border-box;
     border-radius: 66px;
     border: 1px solid #d4dffc;
     background: #fff;
     padding: 8px 24px 8px 8px;
     color: $primary;
+}
+
+@mixin contact-icon() {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 59px;
+    background-color: $accent;
+    margin: 0px 24px 0px 0px;
 }
  
 @mixin bg-image($url){
