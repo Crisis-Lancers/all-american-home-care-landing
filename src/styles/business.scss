@@ -18,6 +18,40 @@
     }
   }
 
+  &__text {
+    &_score {
+      color: #fea500;
+      text-align: center;
+      font-family: Plus Jakarta Sans;
+      font-size: 28.16px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 28.16px;
+    }
+
+    &_google {
+      color: var(--Grey, #868686);
+      text-align: center;
+      font-family: Plus Jakarta Sans;
+      font-size: 14.08px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &__title {
+    &_google {
+      color: var(--Dark-grey, #6a6a6a);
+      text-align: center;
+      font-family: "Plus Jakarta Sans";
+      font-size: 18.773px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 18.773px;
+    }
+  }
+
   &__google-wrapper {
     display: flex;
     justify-content: center;
@@ -39,5 +73,54 @@
     padding: 12px;
     border-radius: 69px;
     border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  &__google-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__google-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+
+  &__google-stars {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__google-star {
+    width: 100%;
+    height: 33px;
+  }
+
+  &__google-logo {
+    font-family: "Product Sans", Arial, sans-serif;
+    font-weight: 700;
+    color: #4285f4;
+    letter-spacing: -1px;
+    &_g {
+      color: #4285f4;
+    }
+    &_o1 {
+      color: #db4437;
+    }
+    &_o2 {
+      color: #f4b400;
+    }
+    &_g2 {
+      color: #4285f4;
+    }
+    &_l {
+      color: #0f9d58;
+    }
+    &_e {
+      color: #db4437;
+    }
   }
 }
