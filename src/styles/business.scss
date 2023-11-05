@@ -1,0 +1,43 @@
+@import "vars";
+
+.business-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+
+  &__item {
+    &_1 {
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    &_2 {
+      grid-row: 1;
+      grid-column: 2;
+    }
+  }
+
+  &__google-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 0px;
+    border-radius: 12px;
+    border: 1px solid $accent;
+    border-width: 8px 1px 1px 1px;
+    border-color: $primary $accent $accent $accent;
+  }
+
+  &__google-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    padding: 12px;
+    border-radius: 69px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+}
