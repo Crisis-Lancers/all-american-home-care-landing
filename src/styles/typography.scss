@@ -98,7 +98,43 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/fonts/Plus Jakarta Sans/PlusJakartaSans-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/fonts/Plus Jakarta Sans/PlusJakartaSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('/fonts/Product Sans/ProductSans-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 // Typography placeholders declaration
+
+%typography-google-text {
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    line-height: normal;
+}
+
+%typography-google-logo {
+    font-family: Product Sans;
+    font-style: normal;
+    line-height: normal;
+}
 
 %typography-contact {
     font-family: Lato;

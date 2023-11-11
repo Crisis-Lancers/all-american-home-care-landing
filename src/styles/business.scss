@@ -30,25 +30,25 @@
   }
 
   &__text {
-    @extend %typography-p3;
     text-align: center;
 
+    &_main {
+      @extend %typography-p3;
+    }
+
     &_score {
-      color: #fea500;
-      font-family: Plus Jakarta Sans;
+      @extend %typography-google-text;
       font-size: 28.16px;
-      font-style: normal;
       font-weight: 800;
       line-height: 28.16px;
+      color: #fea500;
     }
 
     &_google {
-      color: var(--Grey, #868686);
-      font-family: Plus Jakarta Sans;
+      @extend %typography-google-text;
       font-size: 14.08px;
-      font-style: normal;
       font-weight: 400;
-      line-height: normal;
+      color: var(--Grey, #868686);
     }
 
     &_contact {
@@ -60,15 +60,17 @@
   }
 
   &__title {
-    @extend %typography-h1;
     text-align: center;
+
+    &_main {
+      @extend %typography-h1;
+    }
 
     &_google {
       color: var(--Dark-grey, #6a6a6a);
-      font-family: "Plus Jakarta Sans";
-      font-size: 18.773px;
-      font-style: normal;
+      @extend %typography-google-text;
       font-weight: 700;
+      font-size: 18.773px;
       line-height: 18.773px;
     }
   }
@@ -166,10 +168,9 @@
   }
 
   &__google-logo {
-    font-family: "Product Sans", Arial, sans-serif;
+    @extend %typography-google-logo;
     font-weight: 700;
-    color: #4285f4;
-    letter-spacing: -1px;
+
     &_g {
       color: #4285f4;
     }
