@@ -1,4 +1,6 @@
 @import "vars";
+@import "typography";
+@import "mixins";
 
 .business-card {
   display: grid;
@@ -7,21 +9,32 @@
   gap: 10px;
 
   &__item {
+    display: flex;
+    flex-direction: column;
+
     &_1 {
       grid-row: 1;
       grid-column: 1;
+      gap: 25px;
     }
 
     &_2 {
       grid-row: 1;
       grid-column: 2;
+      gap: 10px;
     }
   }
 
+  &__text-wrapper {
+    padding: 0 50px;
+  }
+
   &__text {
+    @extend %typography-p3;
+    text-align: center;
+
     &_score {
       color: #fea500;
-      text-align: center;
       font-family: Plus Jakarta Sans;
       font-size: 28.16px;
       font-style: normal;
@@ -31,24 +44,77 @@
 
     &_google {
       color: var(--Grey, #868686);
-      text-align: center;
       font-family: Plus Jakarta Sans;
       font-size: 14.08px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
     }
+
+    &_contact {
+      display: flex;
+      align-items: center;
+      text-align: start;
+      color: white;
+    }
   }
 
   &__title {
+    @extend %typography-h1;
+    text-align: center;
+
     &_google {
       color: var(--Dark-grey, #6a6a6a);
-      text-align: center;
       font-family: "Plus Jakarta Sans";
       font-size: 18.773px;
       font-style: normal;
       font-weight: 700;
       line-height: 18.773px;
+    }
+  }
+
+  &__apply-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  &__map {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 150px;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: $primary;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__phone {
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(5.5px);
+    font-weight: 700;
+    color: $primary;
+
+    &_inner {
+      display: inline-block;
+      height: auto;
+      padding: 6px 16px;
+      border-radius: 6px;
+      background: #fff;
     }
   }
 
@@ -122,5 +188,11 @@
     &_e {
       color: #db4437;
     }
+  }
+
+  &__image-wrapper {
+    @include bg-image(url("/images/business-card-doctor-1.jpg"));
+    height: 100%;
+    border-radius: 16px;
   }
 }
