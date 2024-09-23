@@ -1,0 +1,63 @@
+@import 'vars';
+@import 'typography';
+@import 'mixins';
+
+.footer__menu{
+    display: flex;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: $primary;
+    color: white;
+    margin: 0px 0px 12px 0px;
+
+    &__item{
+        @extend %typography-p2;
+        font-weight: 400;
+    }
+
+    .footer__list{
+        margin: 0px 0px 48px 0px;
+    }
+
+    .footer__col_center,
+    .footer__col_start{
+        & .footer__item:not(:last-child){
+            margin: 0px 0px 16px 0px;
+        }
+    }
+
+    .footer__col_start,
+    .footer__col_center,
+    .footer__col_end{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        width: 33.33%;
+    }
+
+    .footer__col_center{
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__col_end{
+        align-items: end;
+        text-align: end;
+        & .footer__item:not(:last-child){
+            margin: 0px 0px 14px 0px;
+        }
+    }
+}
+
+.footer{
+    background: none;
+    padding: 0px;
+}
+
+.footer__text{
+    @extend %typography-p5;
+    color: #000;
+    opacity: 0.5;
+    text-align: center;
+}

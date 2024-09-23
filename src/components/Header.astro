@@ -1,0 +1,39 @@
+---
+import "../styles/header.scss";
+
+import ContactButton from "./ContactButton.astro";
+---
+
+<header>
+  <div class="header columns is-vcentered">
+    <div class="header__banner column">
+      <img
+        class="header__image"
+        src="/images/all-american-home-care-logo.png"
+        alt="All American Home Care Logo"
+      />
+    </div>
+    <nav class="header__navigation column">
+      <ul class="header__list columns is-centered">
+        <li class="header__item button is-ghost">
+          <a href="/" class="header__text">Home</a>
+        </li>
+        <li class="header__item button is-ghost">
+          <a href="/" class="header__text">About us</a>
+        </li>
+        <li class="header__item button is-ghost">
+          <a href="/" class="header__text">Services</a>
+        </li>
+        <li class="header__item button is-ghost">
+          <a href="/" class="header__text">Hiring</a>
+        </li>
+        <li class="header__item button is-ghost">
+          <a href="/" class="header__text">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__button column is-flex is-flex-direction-row-reverse">
+      <ContactButton info="215-5317882" icon="/images/call.png" alt="call" ref="" />
+    </div>
+  </div>
+</header>

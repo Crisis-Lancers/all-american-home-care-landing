@@ -1,0 +1,95 @@
+@import "vars";
+@import "typography";
+
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 256px;
+    background-color: $accent;
+    border-radius: 12px;
+
+    &_header {
+      background-color: transparent;
+    }
+
+    &_1 {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    &_2 {
+      flex-direction: row;
+      justify-content: start;
+      align-items: start;
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    &_3 {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    &_4 {
+      grid-column: 4;
+      grid-row: 1;
+    }
+
+    &_5 {
+      grid-column: 5;
+      grid-row: 1;
+    }
+
+    &_6 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    &_7 {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    &_8 {
+      grid-column: 3;
+      grid-row: 2;
+    }
+
+    &_9 {
+      flex-direction: row;
+      justify-content: end;
+      align-items: end;
+      grid-column: 4;
+      grid-row: 2;
+    }
+
+    &_10 {
+      grid-column: 5;
+      grid-row: 2;
+    }
+  }
+
+  &__title-h2 {
+    @extend %typography-h2;
+
+    &_right {
+        text-align: right;
+    }
+  }
+
+  &__title-h4 {
+    @extend %typography-h3;
+  }
+
+  &__text {
+    @extend %typography-p1
+  }
+}

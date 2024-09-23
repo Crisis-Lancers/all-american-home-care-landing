@@ -1,0 +1,19 @@
+---
+import "../styles/button.scss";
+
+type Props = {
+    info: string;
+    icon: string;
+    alt: string;
+    ref: string
+};
+
+const { info, icon, alt, ref } = Astro.props;
+---
+
+<a href={ref} class="button_contact">
+    <div class="button__icon-wrapper">
+      <img src={icon} alt={alt} class="button__icon" />
+    </div>
+    <div class="button__ref">{info}</div>
+</a>

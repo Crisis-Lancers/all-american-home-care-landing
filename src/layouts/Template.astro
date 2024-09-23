@@ -1,0 +1,25 @@
+---
+import "../styles/init-bulma.scss"
+import "../styles/template.scss";
+import "../styles/typography.scss";
+
+type Prop = {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <slot />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+@import "vars";
+@import "typography";
+
+.header {
+    &__image {
+        width: 220px;
+        height: 88px;
+    }
+
+    &__item {
+        padding: 7px 25px;
+    }
+
+    &__text {
+        @extend %typography-p2;
+        color: $primary;
+    }
+}

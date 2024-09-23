@@ -1,0 +1,87 @@
+@import "vars";
+@import "typography";
+
+.specialty-care{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+
+    // Naming issue
+    .title_h2{
+        @extend %typography-h3;
+        color: $primary;
+        align-self: center;
+        margin: 0px 0px 24px 0px;
+        text-align: center;
+    }
+
+    .title_h3{
+        @extend %typography-h3;
+        font-weight: 700;
+        line-height: 100%; /* 40px */
+        color: $primary;
+        margin: 0px 0px 13px 0px;
+    }
+
+    // .title_h3-care{
+    //     margin: 0px 0px 27px 0px;
+    // }
+
+    &__text{
+        @extend %typography-p3;
+        color: $primary;
+        align-self: center;
+        margin: 0px 0px 48px 0px;
+        text-align: center;
+    }
+
+    .specialty-care__items{
+        display: grid;
+        column-gap: 20px;
+        row-gap: 14px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 131px);
+        grid-template-areas: 
+        "hours term term care care"
+        "companion companion nursing care care";
+    }
+
+    .specialty-care__item{
+        background-color: $accent;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &_hours{
+            grid-area: hours;
+        }
+
+        &_term{
+            grid-area: term;
+        }
+
+        &_companion{
+            grid-area: companion;
+        }
+
+        &_nursing{
+            grid-area: nursing;
+        }
+
+        &_care{
+            grid-area: care;
+            .title_h3 {
+                margin: 0px 0px 27px 0px;
+            }
+        }
+    }
+
+    .specialty-care__item-text{
+        @extend %typography-p1;
+        font-weight: 600;
+        color: $primary;
+    }
+}

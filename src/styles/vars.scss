@@ -1,0 +1,17 @@
+// Colors
+
+$primary: #2f3280; // Main blue
+$primaryGradient: linear-gradient(180deg, #2f3280 0%, #191c68 100%); // Main blue gradient
+$secondary: #c22a35; // Secondary red
+$secondaryGradient: linear-gradient(180deg, #c22a35 0%, #a61822 100%); // Secondary red gradient
+$accent: #d4dffc; // Accent light blue
+$accentGradient: linear-gradient(180deg, #d4dffc 0%, #c7d6ff 100%); // Accent light blue gradient
+$unobtrusive: #a9a9a9; // Unobtrusive grey
+
+$grayGradient: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+// Bulma
+
+$success: $secondary;
+$info: $accent;
+$text: $primary;
+$text-invert: #fff;

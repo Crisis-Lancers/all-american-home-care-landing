@@ -1,0 +1,64 @@
+---
+import "../styles/footer.scss";
+
+import ContactButton from "./ContactButton.astro";
+---
+
+<footer>
+  <div class="footer">
+    <div class="footer__menu">
+      <div class="footer__col_start">
+        <ul class="footer__list">
+          <li class="footer__item">Home</li>
+          <li class="footer__item">About us</li>
+          <li class="footer__item">Services</li>
+          <li class="footer__item">Hiring</li>
+          <li class="footer__item">Contacts</li>
+        </ul>
+        <ContactButton info="215-5317882" icon="/images/call.png" alt="call" ref="" />
+      </div>
+      <div class="footer__col_center">
+        <ul class="footer__list">
+          <li class="footer__item">Terms & Conditions</li>
+          <li class="footer__item">Helpful Links</li>
+          <li class="footer__item">Privacy Policy</li>
+          <li class="footer__item">SMS and Call Terms</li>
+          <li class="footer__item">Blog</li>
+        </ul>
+        <div class="footer__image">
+          <img src="/images/footer-logo.svg" alt="footer-logo" />
+        </div>
+      </div>
+      <div class="footer__col_end">
+        <ul class="footer__list">
+          <li class="footer__item">Videos</li>
+          <li class="footer__item">Employee portal</li>
+          <li class="footer__item">
+            <div class="footer__icon">
+              <img src="/images/instagram.svg" alt="instagram" />
+            </div>
+          </li>
+          <li class="footer__item">
+            <div class="footer__icon">
+              <img src="/images/facebook.svg" alt="facebook" />
+            </div>
+          </li>
+          <li class="footer__item">
+            <div class="footer__icon">
+              <img src="/images/linkedin.svg" alt="linkedin" />
+            </div>
+          </li>
+        </ul>
+        <ContactButton
+          info="mspivak@myallamericancare.com"
+          icon="/images/mail.png"
+          alt="mail"
+          ref=""
+        />
+      </div>
+    </div>
+    <p class="footer__text">
+      Copyright © 2023 All American Home Care. All rights reserved
+    </p>
+  </div>
+</footer>

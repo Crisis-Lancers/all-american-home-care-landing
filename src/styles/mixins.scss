@@ -1,0 +1,47 @@
+@import "vars";
+@import "typography";
+
+@mixin block-icon($padding, $margin, $border-radius, $background) {
+    display: flex;
+    padding: $padding;
+    margin: $margin;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border-radius;
+    background: $background;
+}
+
+@mixin contact-block() {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    box-sizing: border-box;
+    border-radius: 66px;
+    border: 1px solid #d4dffc;
+    background: #fff;
+    padding: 8px 24px 8px 8px;
+    color: $primary;
+}
+
+@mixin contact-icon() {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 59px;
+    background-color: $accent;
+    margin: 0px 24px 0px 0px;
+}
+ 
+@mixin bg-image($url){
+    background-image: $url;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin bg-gradient-img($gradient, $url){
+    background: $gradient, $url;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
